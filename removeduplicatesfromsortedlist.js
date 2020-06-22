@@ -54,7 +54,7 @@ while (set.length) {
     temp = next
 }
     
-console.log(newNode.next)
+return newNode.next
 
 
 //O(n) solution that traverses the linked list and removes all duplicates
