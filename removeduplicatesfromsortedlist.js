@@ -33,7 +33,8 @@ l1.next.next.next = new Node(5)
 l1.next.next.next.next = new Node(6)
 
 
-//O(n) solution that uses a hashset
+//O(n) solution that uses a hashset (array) and iterates over the set w/
+//a new linked list.
 
 let newNode = new Node(-1)
     let temp = newNode
@@ -58,6 +59,7 @@ return newNode.next
 
 
 //O(n) solution that traverses the linked list and removes all duplicates
+//by skipping nodes w/ the same value.
 
 let current = l1
 while (current !== null && current.next !== null) {
@@ -68,4 +70,4 @@ while (current !== null && current.next !== null) {
     }
 }
 
-console.log(l1)
+return l1
